@@ -1,0 +1,19 @@
+<main class='container mt-5'>
+  <h3 class="title">Social Dashboard</h3>
+  <label class="subtitle" for='search-artist'>Search an Artist</label>
+  <Input
+    class="search-bar"
+    @id='artist-id'
+    @type='text'
+    @value={{ this.artist_id }}
+  />
+
+  <LinkTo
+    @route="dashboard"
+    @model={{ this.artist_id }}
+    role="button"
+    class="search-button btn btn-primary"
+  >Enter
+  </LinkTo>
+
+</main>
