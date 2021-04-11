@@ -1,0 +1,24 @@
+<div class="dashboard-header">
+  <h1 class="dashboard-title">Overview</h1>
+  <div class="search-link">
+    <i class="fas fa-search fa-lg"></i>
+  </div>
+
+  <div class="search-entry">
+    <Input
+      class="db search-bar"
+      placeholder="Search an Artist"
+      @id='artist-id'
+      @type='text'
+      @value={{ newArtist_id }}
+    />
+
+    <LinkTo
+      @route="dashboard"
+      @model={{ newArtist_id }}
+      role="button"
+      class="search-button btn btn-primary"
+    >Enter
+    </LinkTo>
+  </div>
+</div>
