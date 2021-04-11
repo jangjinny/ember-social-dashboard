@@ -1,0 +1,42 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.dashboard-title {
+  font-family: $fontFamily;
+  font-weight: bold;
+}
+
+.search-button {
+  margin-left: 1em;
+}
+
+.search-entry {
+  display: none;
+}
+
+.search-link {
+  width: 3.2em;
+  height: 3.2em;
+  background-color: #ffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.25), 0 8px 8px rgba(0,0,0,0.22);
+  }
+}
+
+

@@ -1,0 +1,25 @@
+$fontFamily: 'Poppins', sans-serif;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title,
+.subtitle,
+.search-button {
+  font-weight: bold;
+  font-family: $fontFamily;
+}
+
+.search-bar {
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  .db {
+    margin-left: auto;
+  }
+}
