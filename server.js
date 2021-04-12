@@ -25,12 +25,6 @@ const scopes = [
   'user-follow-modify'
 ];
 
-const credentials = {
-  clientId: '8eaba64171064af587b7ae2bb484e567',
-  clientSecret: '948f57368bc64fe792980ad64cc74e13',
-  redirectUri: `http://localhost:${PORT}/callback`
-};
-
 const spotifyApi = new SpotifyWebApi(credentials);
 
 app.get('/', (req, res) => {
