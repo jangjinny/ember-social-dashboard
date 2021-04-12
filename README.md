@@ -1,6 +1,6 @@
 # ember-social-dashboard
 
-Social Dashboard to display an artists data from various social platforms. Built using EmberJS, NodeJS, and Boostrap. 
+Social Dashboard to display an artists data from various social platforms. Built using EmberJS, NodeJS, and Bootstrap. 
 Features to add: Music Player, External APIs, and tests. 
 
 ## Screenshots
