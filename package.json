@@ -67,5 +67,13 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "got": "^11.8.2",
+    "spotify-web-api-node": "^5.0.2",
+    "tiktok-scraper": "^1.4.22",
+    "user-instagram": "^2.1.9"
   }
 }
