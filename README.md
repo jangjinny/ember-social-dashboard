@@ -1,7 +1,12 @@
 # ember-social-dashboard
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Social Dashboard to display an artists data from various social platforms. Built using EmberJS, NodeJS, and Boostrap. 
+Features to add: Music Player, External APIs, and tests. 
+
+## Screenshots
+
+!['Homepage'](https://github.com/jangjinny/ember-social-dashboard/blob/master/public/homepage.png?raw=true)
+!['Card-selected'](https://github.com/jangjinny/ember-social-dashboard/blob/master/public/selected.png)
 
 ## Prerequisites
 
