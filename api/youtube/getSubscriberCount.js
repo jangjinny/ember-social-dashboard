@@ -11,7 +11,7 @@ const getSubcriberCount = async () => {
   const subscriberCount = results.subscriberCount;
 
   console.log("This is the subscriber count:", subscriberCount);
+  return subscriberCount;
 };
 
-getSubcriberCount();
-
+export default getSubcriberCount;
