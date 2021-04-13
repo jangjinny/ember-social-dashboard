@@ -3,7 +3,10 @@
 @import './followers';
 @import './sidebar';
 @import './recentSong';
+@import './latestPost';
 
 body {
-  background-color: #afbdfa;
+  background-color: #e5e1ff;
+  background: rgb(169,134,215);
+  background: linear-gradient(0deg, rgba(169,134,215,1) 0%, rgba(232,208,255,1) 100%);
 }

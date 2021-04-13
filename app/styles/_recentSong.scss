@@ -1,9 +1,57 @@
+.artist-data {
+  display: flex;
+  font-family: $fontFamily;
+}
+
 .recent-song-card,
 .most-watched-video-card {
-  width: 22.2em;
+  display: flex;
+  flex-direction: column;
+  margin: 3em;
+  margin-left: 0;
 }
 
 .recent-song-body,
 .most-watched-video-body {
-  width: 100%;
+  width: fit-content;
+  height: fit-content;
+  &:hover {
+    .views {
+      display: block;
+    }
+
+    .recent-song-img,
+    .most-viewed-img {
+      filter: grayscale(60%);
+    }
+  }
+}
+
+h5.recent-song-title,
+h5.most-watched-video-title {
+  padding-top: 0.5em;
+  font-weight: 600;
+}
+
+.recent-song-img,
+.most-viewed-img {
+  height: 10em;
+  width: 10em;
+  border-radius: 10px;
+}
+
+.song-img-content,
+.video-img-content {
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+}
+
+.views {
+  font-weight: 600;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

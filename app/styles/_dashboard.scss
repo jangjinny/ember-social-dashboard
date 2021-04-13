@@ -1,6 +1,7 @@
 .dashboard-container {
   display: flex;
   justify-content: space-between;
+  width: fit-content;
 }
 
 .main-content {
@@ -14,26 +15,32 @@
 .dashboard-header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
 }
 
 .dashboard-title {
   font-family: $fontFamily;
   font-weight: bold;
+  margin: 0;
+  color: rgb(58, 58, 58);
 }
 
 .search-button {
   margin-left: 1em;
+  outline: none;
+  border: none;
 }
 
 .search-entry {
-  display: none;
+  display: flex;
+  align-items: flex-end;
 }
 
 .search-link {
   width: 3.2em;
   height: 3.2em;
+  margin-right: 4.1em;
   background-color: #ffff;
   border-radius: 50%;
   display: flex;
@@ -46,7 +53,20 @@
   }
 }
 
+.fa-search {
+  color: rgb(0, 0, 0);
+}
+
+.long-card-container,
 .card-container {
   display: flex;
 }
+
+.db {
+  margin-left: auto;
+  margin-bottom: 0;
+  font-family: $fontFamily;
+  width: 15em;
+}
+
 
