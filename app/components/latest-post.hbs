@@ -1,0 +1,23 @@
+<div class="card latest-post-card">
+  <div class="latest-post-body card-body">
+    <h5 class="latest-post-title card-title">
+      Latest Post
+    </h5>
+    <div class="post-content-body">
+      <img
+        class="latest-post-img"
+        src={{@post.img}}
+        alt="image cap"
+      >
+      <div class="likes-container">
+        <i class="fas fa-heart fa-lg"></i>
+        <p class="likes">{{@post.likes}}</p>
+      </div>
+
+      <div class="comments-container">
+        <i class="fas fa-comment fa-lg"></i>
+        <p class="comments">{{@post.comments}}</p>
+      </div>
+    </div>
+  </div>
+</div>
