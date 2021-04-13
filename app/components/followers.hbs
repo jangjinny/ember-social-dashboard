@@ -1,7 +1,12 @@
 <div class="card followers">
-  <div class="card-body">
-    <i class="fab fa-youtube fa-3x"></i>
-    <h5 class="card-title">40359</h5>
+  <div class="follower-body card-body">
+    <i class="fab fa-{{@platform}} fa-3x"></i>
+    <h5 class="follower-count card-title active-{{@followerCount}}">{{@followerCount}}</h5>
+
+    {{#if (eq @platform "youtube")}}
+    <p class="card-text">subscribers</p>
+    {{else}}
     <p class="card-text">followers</p>
+    {{/if}}
   </div>
 </div>
