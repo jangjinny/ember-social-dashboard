@@ -1,16 +1,48 @@
 <main class="dashboard-container">
-  <Sidebar @name={{this.model}} />
+  <Sidebar
+    @name={{this.model.name}}
+    @description={{this.model.description}}
+  />
 
   <div class="main-content">
     <DashboardHeader />
 
     <div class="card-container">
-      <Followers />
-      <Followers />
-      <Followers />
+      {{#each this.model.data as |media|}}
+      <Followers
+        @platform={{media.platform}}
+        @followerCount={{media.followers}}
+      />
+      {{/each}}
     </div>
 
-    <MostRecentSong />
+    <div class="long-card-container">
+      {{#each this.model.data as |media|}}
+      {{#if (eq media.platform "youtube")}}
+        <MostRecentSong
+          @recentSong={{hash
+            title=media.mostRecentSong.title
+            albumImg=media.mostRecentSong.album
+            views=media.mostRecentSong.plays
+          }}
+          @mostViewed={{hash
+            mostViewed=media.mostViewedVideo.title
+            videoImg=media.mostViewedVideo.album
+            views=media.mostViewedVideo.views
+          }}
+        />
+      {{/if}}
+      {{#if (eq media.platform "instagram")}}
+      <LatestPost
+        @post={{hash
+          img=media.post
+          likes=media.likes
+          comments=media.comments
+        }}
+      />
+      {{/if}}
+      {{/each}}
+    </div>
   </div>
 
 </main>
