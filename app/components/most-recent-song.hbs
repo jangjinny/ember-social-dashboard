@@ -1,15 +1,40 @@
 <div class="artist-data">
   <div class="recent-song-card card">
     <div class="recent-song-body card-body">
-      <h5 class="recent-song-title card-title">Celebrity</h5>
-      <p class="recent-song-text card-text">most recent song</p>
+      <div class="song-img-content">
+        <img
+          class="recent-song-img"
+          src={{@recentSong.albumImg}} alt="image cap"
+        >
+        <p class="views">{{@recentSong.views}}m streams</p>
+      </div>
+
+
+      <h5 class="recent-song-title card-title">
+        {{@recentSong.title}}
+      </h5>
+      <p class="recent-song-text card-text">
+        most recent album
+      </p>
     </div>
   </div>
 
   <div class="most-watched-video-card card">
     <div class="most-watched-video-body card-body">
-      <h5 class="most-watched-video-title card-title">Good Day</h5>
-      <p class="most-watched-video-text card-text">most streamed video</p>
+      <div class="video-img-content">
+        <img
+          class="most-viewed-img"
+          src={{@mostViewed.videoImg}}
+          alt="image cap"
+          >
+        <p class="views">{{@mostViewed.views}}m views</p>
+      </div>
+      <h5 class="most-watched-video-title card-title">
+        {{@mostViewed.mostViewed}}
+      </h5>
+      <p class="most-watched-video-text card-text">
+        most streamed video
+      </p>
     </div>
   </div>
 </div>
